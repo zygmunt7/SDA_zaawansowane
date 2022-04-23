@@ -20,4 +20,13 @@ public class Car {
     public void show() {
         System.out.println("Informacje o samochodzie: " + brand + " " + model);
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Car{");
+        sb.append("brand='").append(brand).append('\'');
+        sb.append(", model='").append(model).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
